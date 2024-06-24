@@ -1,0 +1,116 @@
+/* ---------------------------------------GENERAL SETTINGS--------------------------------------- */
+
+body {
+	font-size: 110%;
+	background-color: rgb(240, 240, 240);
+	
+}
+.body-box{
+	margin-left:350px;
+}
+
+/* -----------------------------------------HEADERS----------------------------------------- */
+header{ 			/* MAIN TITLE*/
+	font-size: 300%;
+	text-align: center;
+	color: white;
+	background-color: rgb(28, 66, 138);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	border-radius: 20px;
+}
+
+h1 { 						/* SEGMENT TITLE */
+	text-decoration: underline;
+	color: black;
+	font-size: 160%;
+	font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+
+h2 { 						/* SUBTITLE */
+	color: black;
+	font-size: 125%;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------------------------PARAGRAPHS---------------------------------------- */
+
+p {
+	/*border-style: solid;*/
+	border-color: black;
+	color: black;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------------------IMAGES------------------------------------------- */
+
+.graph{
+	max-width: 70%;
+	min-width: 40%;
+}
+
+pre{
+	background-color: black;
+	color: white;
+	padding-left: 30px;
+	overflow: auto;
+	font-size: 120%;
+}
+
+
+/* ---------------------------------------CONTENTS PAGE--------------------------------------- */
+
+.toc_title{											    /* TITLE */
+	text-decoration: underline;
+	color: black;
+	font-size: 180%;
+	font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+
+.toc_list{
+	background-color: white;
+}
+
+.toc_list li{ /* general list item settings */
+	font-size: 130%;
+	padding-bottom: 3px;
+	color: black;
+	font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+
+.toc_list li:hover {
+	color: red;
+}
+
+.toc_list_sub li{ 							/* SUB POINTS */
+	padding-top: 3px;
+	padding-bottom: 3px;									
+	font-size: 110%;
+}
+
+.nav-area{
+	background-color: white;
+	position: fixed;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100%;
+	max-height: 100%;
+	width: 310px;
+	border-right: 5px;
+	border-color: black;
+	border-style: solid;
+}
+
+
+/* ------------------------------------------REFERENCES-----------------------------------------*/
+
+.References li{
+	color: black;
+	padding-bottom: 0.5%;
+}
+
+
