@@ -3,13 +3,13 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-def market2022(): # Function which stores the algorithm
-    market2022 = pd.read_csv("Data\VR-worldwide-market-share-2022.csv") # reading the data in the csv file
-    graph = sns.barplot(data = market2022, x = "Industry", y = "Market Share (%)") # creating a barplot and storing it in a variable called "graph"
-    plt.title("Forecast distribution of the augmented and mixed reality market worldwide in 2022") # plotting the title
-    for container in graph.containers: # for each bar in the bar graph
-        graph.bar_label(container) # adds the value to the top of each bar
-    plt.show() # displays graph
+def market2022():
+    market2022 = pd.read_csv("Data\VR-worldwide-market-share-2022.csv")
+    graph = sns.barplot(data = market2022, x = "Industry", y = "Market Share (%)")
+    plt.title("Forecast distribution of the augmented and mixed reality market worldwide in 2022")
+    for container in graph.containers:
+        graph.bar_label(container)
+    plt.show()
 
 
 def market2020():
@@ -54,19 +54,12 @@ def main():
     print("4 - public usage")
     print("5 - numberDoctors")
     num = int(input("Select: "))
-    if num == 1:
-        market2022()
-    elif num == 2:
-        market2020()
-    elif num == 3:
-        hospital2018()
-    elif num == 4:
-        publicUsage()
-    elif num == 5:
-        numberDoctors()
-    else:
-        print("1 - market 2022")
+    if num == 1: market2022()
+    elif num == 2: market2020()
+    elif num == 3: hospital2018()
+    elif num == 4: publicUsage()
+    elif num == 5: numberDoctors()
+    else: print("1 - market 2022")
 
 
 main()
-
